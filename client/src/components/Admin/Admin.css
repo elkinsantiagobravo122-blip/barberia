@@ -1,0 +1,366 @@
+
+.admin {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #f8f3ea 0%, #f4efe8 100%);
+}
+
+.admin-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px 40px;
+}
+
+.admin-tabs {
+    box-shadow: 0 22px 40px rgba(17, 17, 17, 0.08);
+    width: min(90%, 1200px);
+    background: rgba(255,255,255,0.96);
+    padding: 28px;
+    border-radius: 20px;
+    border: 1px solid rgba(17,17,17,0.06);
+}
+
+.admin-login-wrap {
+    padding-top: 80px;
+}
+
+.admin-login-box {
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: min(420px, 90%);
+    box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+}
+
+.admin-login-box h2 {
+    margin: 0 0 8px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: #f3d79d;
+}
+
+.admin-login-box input {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.admin-login-box button,
+.barber-btn,
+.appointments-list button,
+.save-settings-btn,
+.cancel-btn,
+.card-actions button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #d9b766, #c99d35);
+    color: #111;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.barber-selector {
+    margin-bottom: 18px;
+}
+
+.barber-selector h2 {
+    color: #1d1d1d;
+    margin-bottom: 10px;
+}
+
+.barber-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.barber-btn {
+    background: #f3f3f3;
+    color: #111;
+}
+
+.barber-btn.active {
+    background: #111;
+    color: #fff;
+}
+
+.admin-toolbar {
+    display: flex;
+    gap: 10px;
+    margin: 14px 0 18px;
+}
+
+.admin-toggle-btn {
+    border: 1px solid rgba(17,17,17,0.08);
+    border-radius: 999px;
+    background: #f8f8f8;
+    color: #111;
+    padding: 10px 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin-toggle-btn.active {
+    background: #111;
+    color: #fff;
+}
+
+.service-manager {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.service-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background: linear-gradient(180deg, #fffdfb, #f7f3ee);
+    border: 1px solid rgba(17,17,17,0.06);
+    border-radius: 18px;
+}
+
+.service-form h3 {
+    margin: 0 0 4px;
+    color: #1b1b1b;
+}
+
+.service-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.service-form input,
+.service-form textarea,
+.config-grid input,
+.config-grid select,
+.week-row input,
+.appointments-list input {
+    padding: 10px 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font: inherit;
+    background: #fff;
+}
+
+.service-form textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+.service-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.cancel-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.service-list {
+    display: grid;
+    gap: 16px;
+}
+
+.service-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid rgba(17,17,17,0.06);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fff, #f9f7f4);
+}
+
+.service-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.service-card h4 {
+    margin: 0 0 8px;
+    color: #1b1b1b;
+}
+
+.service-card p {
+    margin: 0 0 8px;
+    color: #5d5b59;
+}
+
+.service-card small {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #111;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.card-actions button {
+    background: #f4f4f4;
+    color: #111;
+}
+
+.card-actions .danger {
+    background: #fbeaea;
+    color: #a12020;
+}
+
+.admin-config,
+.appointments-list {
+    background: #fff;
+    border: 1px solid rgba(17,17,17,0.06);
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.date-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.date-tab {
+    border: 1px solid rgba(17,17,17,0.08);
+    border-radius: 999px;
+    background: #f7f5f2;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.date-tab.active {
+    background: #111;
+    color: #fff;
+}
+
+.date-tab.danger {
+    background: #fff1f1;
+    color: #b42318;
+    border-color: rgba(180, 35, 24, 0.2);
+}
+
+.selected-date-label {
+    margin: 12px 0 0;
+    color: #666;
+    font-weight: 600;
+}
+
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.config-grid label,
+.week-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.weekly-hours {
+    margin-top: 18px;
+}
+
+.week-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.week-toggle {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 10px;
+}
+
+.appointments-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+.appointments-list th,
+.appointments-list td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+@media only screen and (max-width: 900px){
+    .admin-tabs {
+        width: 95%;
+    }
+
+    .service-manager,
+    .config-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appointments-list table td,
+    .appointments-list table th {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .admin-tabs {
+        width: 99%;
+    }
+
+    .service-card,
+    .week-row {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .appointments-list table td,
+    .appointments-list table th {
+        font-size: 10px;
+        padding: 8px 6px;
+    }
+}
